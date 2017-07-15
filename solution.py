@@ -30,15 +30,6 @@ def naked_twins(values):
     # Find all instances of naked twins
     # Eliminate the naked twins as possibilities for their peers
 
-    # STEP 1: loop through row_units, column_units, square_units and diagonal units
-    #         for each cell to get its peers
-    #
-    # STEP 2: find the existence of a grid that has the same possible values
-    #         as the current grid
-    #
-    # STEP 3: In the *_unit, eliminate all other grids' possible values that match
-    #         these two grids' possible values
-
     for cell_key in values.keys():
         value = values[cell_key]
 
